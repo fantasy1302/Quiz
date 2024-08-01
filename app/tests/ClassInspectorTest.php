@@ -26,8 +26,8 @@ class ClassInspectorTest extends TestCase
 
         $expected = [
             'public' => ['__construct', 'get_name'],
-            'protected' => ['addQuestion'],
-            'private' => ['calculateScore']
+            'protected' => ['add_question'],
+            'private' => ['calculate_score']
         ];
 
         $this->assertEquals( $expected, $methods );
