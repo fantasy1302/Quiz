@@ -44,11 +44,11 @@ class ClassInspector
         ];
 
         foreach ( $properties as $property ) {
-            if ($property->isPublic()) {
+            if ( $property->isPublic() ) {
                 $result['public'][] = $property->getName();
-            } elseif ($property->isProtected()) {
+            } elseif ( $property->isProtected() ) {
                 $result['protected'][] = $property->getName();
-            } elseif ($property->isPrivate()) {
+            } elseif ( $property->isPrivate() ) {
                 $result['private'][] = $property->getName();
             }
         }
