@@ -13,8 +13,8 @@ class Quiz
 
     public function __construct()
     {
-        $this->addQuestion('What is the capital of France?');
-        $this->addQuestion('What is the capital of Germany?');
+        $this->add_question('What is the capital of France?');
+        $this->add_question('What is the capital of Germany?');
     }
 
     public function get_name()
@@ -22,12 +22,12 @@ class Quiz
         return 'Quiz';
     }
 
-    protected function addQuestion( $question )
+    protected function add_question( $question )
     {
         $this->questions[] = $question;
     }
 
-    private function calculateScore()
+    private function calculate_score()
     {
         return 0;
     }

@@ -22,7 +22,7 @@ class ClassInspector
      *
      * @param $className
      */
-    public function __construct( $className  )
+    public function __construct( $className )
     {
         $this->className = $className;
     }
