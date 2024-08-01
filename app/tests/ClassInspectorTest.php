@@ -7,7 +7,7 @@ class ClassInspectorTest extends TestCase
 {
     public function testGetProperties()
     {
-        $inspector = new ClassInspector(Fantasy1302\Quizapp\Quiz::class);
+        $inspector = new ClassInspector( Fantasy1302\Quizapp\Quiz::class );
         $properties = $inspector->get_properties();
 
         $expected = [
@@ -16,12 +16,12 @@ class ClassInspectorTest extends TestCase
             'private' => ['title']
         ];
 
-        $this->assertEquals($expected, $properties);
+        $this->assertEquals( $expected, $properties );
     }
 
     public function testGetMethods()
     {
-        $inspector = new ClassInspector(Fantasy1302\Quizapp\Quiz::class);
+        $inspector = new ClassInspector( Fantasy1302\Quizapp\Quiz::class );
         $methods = $inspector->get_methods();
 
         $expected = [
@@ -30,6 +30,6 @@ class ClassInspectorTest extends TestCase
             'private' => ['calculateScore']
         ];
 
-        $this->assertEquals($expected, $methods);
+        $this->assertEquals( $expected, $methods );
     }
 }
