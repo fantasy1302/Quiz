@@ -1,0 +1,22 @@
+{
+    "name": "fantasy1302/quizapp",
+    "autoload": {
+        "psr-4": {
+            "Fantasy1302\\Quizapp\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fantasy1302\\Quizapp\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Morozov",
+            "email": "iceberginaction@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.2"
+    }
+}
